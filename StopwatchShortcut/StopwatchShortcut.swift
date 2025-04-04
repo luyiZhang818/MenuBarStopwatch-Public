@@ -10,16 +10,15 @@ struct StopwatchShortcut: AppIntent {
     }
 
     func perform() async throws -> some IntentResult {
-        print("Shortcut: Sending \(action) notification") // Debug
 
         let notificationName: String
         switch action {
         case .start:
-            notificationName = "com.zly.MenuBarStopWatch.start"
+            notificationName = "app.menubar.stopwatch.start"
         case .stop:
-            notificationName = "com.zly.MenuBarStopWatch.stop"
+            notificationName = "app.menubar.stopwatch.stop"
         case .reset:
-            notificationName = "com.zly.MenuBarStopWatch.reset"
+            notificationName = "app.menubar.stopwatch.reset"
         }
         
         DistributedNotificationCenter.default().post(

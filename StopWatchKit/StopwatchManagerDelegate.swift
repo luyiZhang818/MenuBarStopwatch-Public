@@ -7,7 +7,7 @@ public protocol StopwatchManagerDelegate: AnyObject {
 public class StopwatchManager {
     public static let shared = StopwatchManager()
     
-    private let userDefaults = UserDefaults(suiteName: "group.zly.MenuBarStopWatch")
+    private let userDefaults = UserDefaults(suiteName: "group.example.MenuBarStopWatch")
     
     public weak var delegate: StopwatchManagerDelegate?
     private var timer: Timer?
@@ -25,7 +25,6 @@ public class StopwatchManager {
     private init() {}
     
     public func startTimer() {
-        print("Starting timer...") // Debug print
         if startTime == nil {
             startTime = Date()
         } else {
@@ -37,7 +36,6 @@ public class StopwatchManager {
         
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            print("Setting up timer on main queue") // Debug print
             self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [weak self] _ in
                 self?.updateDisplay()
             }
@@ -59,6 +57,12 @@ public class StopwatchManager {
         delegate?.didUpdateTime("00:00:00")
     }
     
+    public func quitTimer() {
+        stopTimer()
+        startTime = nil
+        delegate?.didUpdateTime("00:00:00")
+    }
+
     private func updateDisplay() {
         guard let startTime = startTime else { return }
         

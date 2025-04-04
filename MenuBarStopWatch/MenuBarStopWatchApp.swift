@@ -1,10 +1,3 @@
-//
-//  MenuBarStopWatchApp.swift
-//  MenuBarStopWatch
-//
-//  Created by Luyi Zhang on 4/4/25.
-//
-
 import SwiftUI
 
 @main

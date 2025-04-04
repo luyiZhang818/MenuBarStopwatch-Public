@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18334DEC2DA06C8300FA517A /* StopwatchShortcut.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18334DFB2DA0848800FA517A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 18334DFA2DA0848200FA517A /* .gitignore */; };
+		18334E1F2DA08AFD00FA517A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18334E1D2DA08AF800FA517A /* README.md */; };
 		1880A11B2DA02D1F00282601 /* StopWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; };
 		1880A1262DA02D1F00282601 /* StopWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; };
 		1880A1272DA02D1F00282601 /* StopWatchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -85,13 +87,8 @@
 
 /* Begin PBXFileReference section */
 		18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = StopwatchShortcut.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		18334DF32DA07A8400FA517A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		18334DF42DA07B9700FA517A /* icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_32x32.png; sourceTree = "<group>"; };
-		18334DF52DA07BB000FA517A /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
-		18334DF62DA07BB600FA517A /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_128x128.png; sourceTree = "<group>"; };
-		18334DF72DA07BBC00FA517A /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
-		18334DF82DA07BF500FA517A /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
-		18334DF92DA07D1700FA517A /* icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_16x16.png; sourceTree = "<group>"; };
+		18334DFA2DA0848200FA517A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		18334E1D2DA08AF800FA517A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1880A0C32DA0284B00282601 /* MenuBarStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarStopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880A0D42DA0284C00282601 /* MenuBarStopWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarStopWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880A0DE2DA0284C00282601 /* MenuBarStopWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarStopWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +103,30 @@
 				Info.plist,
 			);
 			target = 18334DE12DA06C8300FA517A /* StopwatchShortcut */;
+		};
+		18334E252DA08B6300FA517A /* Exceptions for "Images" folder in "MenuBarStopWatch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Demo_MenuBar.gif,
+				Demo_Shortcut.gif,
+				icon_16x16_rounded.png,
+				icon_16x16.png,
+				icon_32x32_rounded.png,
+				icon_32x32.png,
+				icon_64x64_rounded.png,
+				icon_64x64.png,
+				icon_128x128_rounded.png,
+				icon_128x128.png,
+				icon_256x256_rounded.png,
+				icon_256x256.png,
+				icon_512x512_rounded.png,
+				icon_512x512.png,
+				icon_1024x1024_rounded.png,
+				icon.png,
+				menubar_Ex.jpg,
+				Popup.jpg,
+			);
+			target = 1880A0C22DA0284B00282601 /* MenuBarStopWatch */;
 		};
 		1880A1282DA02D1F00282601 /* Exceptions for "StopWatchKit" folder in "StopWatchKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -123,6 +144,14 @@
 				18334DED2DA06C8300FA517A /* Exceptions for "StopwatchShortcut" folder in "StopwatchShortcut" target */,
 			);
 			path = StopwatchShortcut;
+			sourceTree = "<group>";
+		};
+		18334E242DA08B5E00FA517A /* Images */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18334E252DA08B6300FA517A /* Exceptions for "Images" folder in "MenuBarStopWatch" target */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		1880A0C52DA0284B00282601 /* MenuBarStopWatch */ = {
@@ -212,8 +241,11 @@
 				1880A1122DA02D1E00282601 /* StopWatchKit */,
 				1880A1202DA02D1F00282601 /* StopWatchKitTests */,
 				18334DE32DA06C8300FA517A /* StopwatchShortcut */,
+				18334DFA2DA0848200FA517A /* .gitignore */,
+				18334E1D2DA08AF800FA517A /* README.md */,
 				1880A1312DA0300600282601 /* Frameworks */,
 				1880A0C42DA0284B00282601 /* Products */,
+				18334E242DA08B5E00FA517A /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,13 +265,6 @@
 		1880A1312DA0300600282601 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18334DF32DA07A8400FA517A /* icon.png */,
-				18334DF42DA07B9700FA517A /* icon_32x32.png */,
-				18334DF52DA07BB000FA517A /* icon_256x256.png */,
-				18334DF62DA07BB600FA517A /* icon_128x128.png */,
-				18334DF72DA07BBC00FA517A /* icon_64x64.png */,
-				18334DF82DA07BF500FA517A /* icon_512x512.png */,
-				18334DF92DA07D1700FA517A /* icon_16x16.png */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,6 +321,7 @@
 				18334DEB2DA06C8300FA517A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				18334E242DA08B5E00FA517A /* Images */,
 				1880A0C52DA0284B00282601 /* MenuBarStopWatch */,
 			);
 			name = MenuBarStopWatch;
@@ -460,6 +486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18334DFB2DA0848800FA517A /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +494,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18334E1F2DA08AFD00FA517A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,8 +626,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopwatchShortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch.StopwatchShortcutExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -626,8 +655,9 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopwatchShortcut;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch.StopwatchShortcutExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -781,8 +811,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -820,8 +851,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -838,11 +870,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P3F6562DPX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -861,11 +894,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P3F6562DPX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -887,7 +921,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatchUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -909,7 +943,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatchUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -947,7 +981,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -985,7 +1019,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1006,7 +1040,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1024,7 +1058,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;

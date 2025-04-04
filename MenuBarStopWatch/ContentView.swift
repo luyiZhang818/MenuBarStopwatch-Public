@@ -12,7 +12,7 @@ struct ContentView: View {
             Divider()
                 .padding(.vertical, 4)
             
-            MenuButton(action: { NSApp.terminate(nil) }, title: "Quit", shortcut: "q")
+            MenuButton(action: appDelegate.quitTimer, title: "Quit", shortcut: "q")
                 .foregroundColor(.red)
         }
         .padding(.vertical, 8)
