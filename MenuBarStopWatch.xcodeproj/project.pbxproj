@@ -109,6 +109,7 @@
 			membershipExceptions = (
 				Demo_MenuBar.gif,
 				Demo_Shortcut.gif,
+				Demo3.gif,
 				icon_16x16_rounded.png,
 				icon_16x16.png,
 				icon_32x32_rounded.png,
