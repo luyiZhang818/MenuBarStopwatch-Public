@@ -6,7 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		18334DEC2DA06C8300FA517A /* StopwatchShortcut.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1880A11B2DA02D1F00282601 /* StopWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; };
+		1880A1262DA02D1F00282601 /* StopWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; };
+		1880A1272DA02D1F00282601 /* StopWatchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		18334DEA2DA06C8300FA517A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18334DE12DA06C8300FA517A;
+			remoteInfo = StopwatchShortcut;
+		};
 		1880A0D52DA0284C00282601 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
@@ -21,15 +35,96 @@
 			remoteGlobalIDString = 1880A0C22DA0284B00282601;
 			remoteInfo = MenuBarStopWatch;
 		};
+		1880A11C2DA02D1F00282601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1880A1102DA02D1E00282601;
+			remoteInfo = StopWatchKit;
+		};
+		1880A11E2DA02D1F00282601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1880A0C22DA0284B00282601;
+			remoteInfo = MenuBarStopWatch;
+		};
+		1880A1242DA02D1F00282601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1880A1102DA02D1E00282601;
+			remoteInfo = StopWatchKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1880A1042DA028DF00282601 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				18334DEC2DA06C8300FA517A /* StopwatchShortcut.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880A12C2DA02D1F00282601 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1880A1272DA02D1F00282601 /* StopWatchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = StopwatchShortcut.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18334DF32DA07A8400FA517A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		18334DF42DA07B9700FA517A /* icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_32x32.png; sourceTree = "<group>"; };
+		18334DF52DA07BB000FA517A /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_256x256.png; sourceTree = "<group>"; };
+		18334DF62DA07BB600FA517A /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_128x128.png; sourceTree = "<group>"; };
+		18334DF72DA07BBC00FA517A /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
+		18334DF82DA07BF500FA517A /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
+		18334DF92DA07D1700FA517A /* icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_16x16.png; sourceTree = "<group>"; };
 		1880A0C32DA0284B00282601 /* MenuBarStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarStopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880A0D42DA0284C00282601 /* MenuBarStopWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarStopWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880A0DE2DA0284C00282601 /* MenuBarStopWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuBarStopWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1880A1112DA02D1E00282601 /* StopWatchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StopWatchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1880A11A2DA02D1F00282601 /* StopWatchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopWatchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18334DED2DA06C8300FA517A /* Exceptions for "StopwatchShortcut" folder in "StopwatchShortcut" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 18334DE12DA06C8300FA517A /* StopwatchShortcut */;
+		};
+		1880A1282DA02D1F00282601 /* Exceptions for "StopWatchKit" folder in "StopWatchKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				StopWatchKit.h,
+			);
+			target = 1880A1102DA02D1E00282601 /* StopWatchKit */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		18334DE32DA06C8300FA517A /* StopwatchShortcut */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				18334DED2DA06C8300FA517A /* Exceptions for "StopwatchShortcut" folder in "StopwatchShortcut" target */,
+			);
+			path = StopwatchShortcut;
+			sourceTree = "<group>";
+		};
 		1880A0C52DA0284B00282601 /* MenuBarStopWatch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MenuBarStopWatch;
@@ -45,13 +140,34 @@
 			path = MenuBarStopWatchUITests;
 			sourceTree = "<group>";
 		};
+		1880A1122DA02D1E00282601 /* StopWatchKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1880A1282DA02D1F00282601 /* Exceptions for "StopWatchKit" folder in "StopWatchKit" target */,
+			);
+			path = StopWatchKit;
+			sourceTree = "<group>";
+		};
+		1880A1202DA02D1F00282601 /* StopWatchKitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StopWatchKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18334DDF2DA06C8300FA517A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1880A0C02DA0284B00282601 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1880A1262DA02D1F00282601 /* StopWatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +185,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1880A10E2DA02D1E00282601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880A1172DA02D1F00282601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1880A11B2DA02D1F00282601 /* StopWatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +209,10 @@
 				1880A0C52DA0284B00282601 /* MenuBarStopWatch */,
 				1880A0D72DA0284C00282601 /* MenuBarStopWatchTests */,
 				1880A0E12DA0284C00282601 /* MenuBarStopWatchUITests */,
+				1880A1122DA02D1E00282601 /* StopWatchKit */,
+				1880A1202DA02D1F00282601 /* StopWatchKitTests */,
+				18334DE32DA06C8300FA517A /* StopwatchShortcut */,
+				1880A1312DA0300600282601 /* Frameworks */,
 				1880A0C42DA0284B00282601 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,13 +223,62 @@
 				1880A0C32DA0284B00282601 /* MenuBarStopWatch.app */,
 				1880A0D42DA0284C00282601 /* MenuBarStopWatchTests.xctest */,
 				1880A0DE2DA0284C00282601 /* MenuBarStopWatchUITests.xctest */,
+				1880A1112DA02D1E00282601 /* StopWatchKit.framework */,
+				1880A11A2DA02D1F00282601 /* StopWatchKitTests.xctest */,
+				18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1880A1312DA0300600282601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18334DF32DA07A8400FA517A /* icon.png */,
+				18334DF42DA07B9700FA517A /* icon_32x32.png */,
+				18334DF52DA07BB000FA517A /* icon_256x256.png */,
+				18334DF62DA07BB600FA517A /* icon_128x128.png */,
+				18334DF72DA07BBC00FA517A /* icon_64x64.png */,
+				18334DF82DA07BF500FA517A /* icon_512x512.png */,
+				18334DF92DA07D1700FA517A /* icon_16x16.png */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1880A10C2DA02D1E00282601 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		18334DE12DA06C8300FA517A /* StopwatchShortcut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18334DEE2DA06C8300FA517A /* Build configuration list for PBXNativeTarget "StopwatchShortcut" */;
+			buildPhases = (
+				18334DDE2DA06C8300FA517A /* Sources */,
+				18334DDF2DA06C8300FA517A /* Frameworks */,
+				18334DE02DA06C8300FA517A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				18334DE32DA06C8300FA517A /* StopwatchShortcut */,
+			);
+			name = StopwatchShortcut;
+			packageProductDependencies = (
+			);
+			productName = StopwatchShortcut;
+			productReference = 18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		1880A0C22DA0284B00282601 /* MenuBarStopWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1880A0E82DA0284C00282601 /* Build configuration list for PBXNativeTarget "MenuBarStopWatch" */;
@@ -102,10 +286,14 @@
 				1880A0BF2DA0284B00282601 /* Sources */,
 				1880A0C02DA0284B00282601 /* Frameworks */,
 				1880A0C12DA0284B00282601 /* Resources */,
+				1880A1042DA028DF00282601 /* Embed ExtensionKit Extensions */,
+				1880A12C2DA02D1F00282601 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1880A1252DA02D1F00282601 /* PBXTargetDependency */,
+				18334DEB2DA06C8300FA517A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1880A0C52DA0284B00282601 /* MenuBarStopWatch */,
@@ -163,6 +351,53 @@
 			productReference = 1880A0DE2DA0284C00282601 /* MenuBarStopWatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1880A1102DA02D1E00282601 /* StopWatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1880A1292DA02D1F00282601 /* Build configuration list for PBXNativeTarget "StopWatchKit" */;
+			buildPhases = (
+				1880A10C2DA02D1E00282601 /* Headers */,
+				1880A10D2DA02D1E00282601 /* Sources */,
+				1880A10E2DA02D1E00282601 /* Frameworks */,
+				1880A10F2DA02D1E00282601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1880A1122DA02D1E00282601 /* StopWatchKit */,
+			);
+			name = StopWatchKit;
+			packageProductDependencies = (
+			);
+			productName = StopWatchKit;
+			productReference = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1880A1192DA02D1F00282601 /* StopWatchKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1880A12D2DA02D1F00282601 /* Build configuration list for PBXNativeTarget "StopWatchKitTests" */;
+			buildPhases = (
+				1880A1162DA02D1F00282601 /* Sources */,
+				1880A1172DA02D1F00282601 /* Frameworks */,
+				1880A1182DA02D1F00282601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1880A11D2DA02D1F00282601 /* PBXTargetDependency */,
+				1880A11F2DA02D1F00282601 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1880A1202DA02D1F00282601 /* StopWatchKitTests */,
+			);
+			name = StopWatchKitTests;
+			packageProductDependencies = (
+			);
+			productName = StopWatchKitTests;
+			productReference = 1880A11A2DA02D1F00282601 /* StopWatchKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,9 +405,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					18334DE12DA06C8300FA517A = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					1880A0C22DA0284B00282601 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -181,6 +419,13 @@
 						TestTargetID = 1880A0C22DA0284B00282601;
 					};
 					1880A0DD2DA0284C00282601 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 1880A0C22DA0284B00282601;
+					};
+					1880A1102DA02D1E00282601 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					1880A1192DA02D1F00282601 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 1880A0C22DA0284B00282601;
 					};
@@ -203,11 +448,21 @@
 				1880A0C22DA0284B00282601 /* MenuBarStopWatch */,
 				1880A0D32DA0284C00282601 /* MenuBarStopWatchTests */,
 				1880A0DD2DA0284C00282601 /* MenuBarStopWatchUITests */,
+				1880A1102DA02D1E00282601 /* StopWatchKit */,
+				1880A1192DA02D1F00282601 /* StopWatchKitTests */,
+				18334DE12DA06C8300FA517A /* StopwatchShortcut */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18334DE02DA06C8300FA517A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1880A0C12DA0284B00282601 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,9 +484,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1880A10F2DA02D1E00282601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880A1182DA02D1F00282601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18334DDE2DA06C8300FA517A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1880A0BF2DA0284B00282601 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,9 +529,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1880A10D2DA02D1E00282601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1880A1162DA02D1F00282601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18334DEB2DA06C8300FA517A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18334DE12DA06C8300FA517A /* StopwatchShortcut */;
+			targetProxy = 18334DEA2DA06C8300FA517A /* PBXContainerItemProxy */;
+		};
 		1880A0D62DA0284C00282601 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1880A0C22DA0284B00282601 /* MenuBarStopWatch */;
@@ -266,9 +561,80 @@
 			target = 1880A0C22DA0284B00282601 /* MenuBarStopWatch */;
 			targetProxy = 1880A0DF2DA0284C00282601 /* PBXContainerItemProxy */;
 		};
+		1880A11D2DA02D1F00282601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1880A1102DA02D1E00282601 /* StopWatchKit */;
+			targetProxy = 1880A11C2DA02D1F00282601 /* PBXContainerItemProxy */;
+		};
+		1880A11F2DA02D1F00282601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1880A0C22DA0284B00282601 /* MenuBarStopWatch */;
+			targetProxy = 1880A11E2DA02D1F00282601 /* PBXContainerItemProxy */;
+		};
+		1880A1252DA02D1F00282601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1880A1102DA02D1E00282601 /* StopWatchKit */;
+			targetProxy = 1880A1242DA02D1F00282601 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		18334DEF2DA06C8300FA517A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StopwatchShortcut/StopwatchShortcut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopwatchShortcut/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StopwatchShortcut;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopwatchShortcut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18334DF02DA06C8300FA517A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StopwatchShortcut/StopwatchShortcut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StopwatchShortcut/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StopwatchShortcut;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopwatchShortcut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		1880A0E62DA0284C00282601 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,7 +669,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P3F6562DPX;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -364,7 +732,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P3F6562DPX;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -389,8 +759,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MenuBarStopWatch/MenuBarStopWatch.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MenuBarStopWatch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -426,8 +798,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MenuBarStopWatch/MenuBarStopWatch.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MenuBarStopWatch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -463,6 +837,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -485,6 +860,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -506,6 +882,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -527,6 +904,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -543,9 +921,130 @@
 			};
 			name = Release;
 		};
+		1880A12A2DA02D1F00282601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1880A12B2DA02D1F00282601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1880A12E2DA02D1F00282601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBarStopWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenuBarStopWatch";
+			};
+			name = Debug;
+		};
+		1880A12F2DA02D1F00282601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zly.MenuBarStopWatch.StopWatchKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBarStopWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenuBarStopWatch";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18334DEE2DA06C8300FA517A /* Build configuration list for PBXNativeTarget "StopwatchShortcut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18334DEF2DA06C8300FA517A /* Debug */,
+				18334DF02DA06C8300FA517A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1880A0BE2DA0284B00282601 /* Build configuration list for PBXProject "MenuBarStopWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -578,6 +1077,24 @@
 			buildConfigurations = (
 				1880A0EF2DA0284C00282601 /* Debug */,
 				1880A0F02DA0284C00282601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1880A1292DA02D1F00282601 /* Build configuration list for PBXNativeTarget "StopWatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1880A12A2DA02D1F00282601 /* Debug */,
+				1880A12B2DA02D1F00282601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1880A12D2DA02D1F00282601 /* Build configuration list for PBXNativeTarget "StopWatchKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1880A12E2DA02D1F00282601 /* Debug */,
+				1880A12F2DA02D1F00282601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
