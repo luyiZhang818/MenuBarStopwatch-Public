@@ -2,9 +2,9 @@
 
 A minimalist macOS menu bar stopwatch application with Siri Shortcuts integration.
 
-![Menu Bar Stopwatch](images/Demo_MenuBar.gif)
+![Menu Bar Stopwatch](Images/Demo_MenuBar.gif)
 
-![Menu Bar Stopwatch Shortcut](images/Demo_Shortcut.gif)
+![Menu Bar Stopwatch Shortcut](Images/Demo_Shortcut.gif)
 
 ## Features
 - ⏱️ Start/Stop/Reset timer from menu bar
@@ -13,7 +13,7 @@ A minimalist macOS menu bar stopwatch application with Siri Shortcuts integratio
 
 
 Example usage: time tracking
-![Menu Bar Stopwatch Shortcut](images/Demo3.gif)
+![Menu Bar Stopwatch Shortcut](Images/Demo3.gif)
 
 
 ## Installation
