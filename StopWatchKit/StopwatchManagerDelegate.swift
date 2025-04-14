@@ -7,7 +7,7 @@ public protocol StopwatchManagerDelegate: AnyObject {
 public class StopwatchManager {
     public static let shared = StopwatchManager()
     
-    private let userDefaults = UserDefaults(suiteName: "group.example.MenuBarStopWatch")
+    private let userDefaults = UserDefaults(suiteName: "group.io.luyi.MenuBarStopWatch")
     
     public weak var delegate: StopwatchManagerDelegate?
     private var timer: Timer?

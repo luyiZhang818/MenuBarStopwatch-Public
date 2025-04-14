@@ -46,7 +46,7 @@ struct MenuButton: View {
             .contentShape(Rectangle())
             .background(
                 RoundedRectangle(cornerRadius: 4)
-                    .fill(isHovered ? Color(.selectedMenuItemColor) : Color.clear)
+                    .fill(isHovered ? Color(nsColor: .selectedContentBackgroundColor) : .clear)
             )
         }
         .buttonStyle(.plain)
