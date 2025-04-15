@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+  <!-- App Metadata -->
+  <key>CFBundleIdentifier</key>
+  <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+  <key>CFBundleName</key>
+  <string>MenuBarStopWatch</string>
+  <key>CFBundleDisplayName</key>
+  <string>MenuBar Stopwatch</string>
+  <key>CFBundleVersion</key>
+  <string>1</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.0</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>13.0</string> <!-- macOS Ventura or later for App Intents -->
+  <key>LSUIElement</key>
+  <true/>
+
+
+  <!-- App Intents Declaration -->
+  <key>NSAppIntentConfiguration</key>
+  <array>
+    <dict>
+      <key>NSAppIntentIdentifier</key>
+      <string>StopwatchShortcut</string>
+      <key>NSAppIntentName</key>
+      <string>Control Stopwatch</string>
+    </dict>
+  </array>
+
+  <!-- macOS App Configuration -->
+  <key>NSPrincipalClass</key>
+  <string>NSApplication</string>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+</dict>
 </plist>

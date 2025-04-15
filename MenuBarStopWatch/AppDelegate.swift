@@ -1,50 +1,47 @@
 import SwiftUI
 import StopWatchKit
 
-class AppDelegate: NSObject, NSApplicationDelegate, StopwatchManagerDelegate, ObservableObject {
+/// An ObservableObject for SwiftUI that bridges between the StopwatchManager and
+/// the UI components. Publishes updated time strings for SwiftUI views to observe.
+class StopwatchController: ObservableObject, StopwatchManagerDelegate {
+    /// Published property that triggers UI updates when the time changes.
     @Published var currentTime: String = "00:00:00"
     
-    let stopwatchManager = StopwatchManager.shared
+    /// Reference to the singleton stopwatch manager.
+    private let stopwatchManager: StopwatchManager
     
-    func applicationDidFinishLaunching(_ notification: Notification) {
+    /// Initializes the controller and sets itself as the manager's delegate.
+    init(manager: StopwatchManager = StopwatchManager.shared) {
+        self.stopwatchManager = manager
+        // Assign self as the manager delegate to receive time updates.
         stopwatchManager.delegate = self
-        
-        let notificationCenter = DistributedNotificationCenter.default()
-        
-        notificationCenter.addObserver(self, selector: #selector(handleStart), name: Notification.Name("app.menubar.stopwatch.start"), object: nil, suspensionBehavior: .deliverImmediately)
-        notificationCenter.addObserver(self, selector: #selector(handleStop), name: Notification.Name("app.menubar.stopwatch.stop"), object: nil, suspensionBehavior: .deliverImmediately)
-        notificationCenter.addObserver(self, selector: #selector(handleReset), name: Notification.Name("app.menubar.stopwatch.reset"), object: nil, suspensionBehavior: .deliverImmediately)
-        notificationCenter.addObserver(self, selector: #selector(handleQuit), name: Notification.Name("app.menubar.stopwatch.quit"), object: nil, suspensionBehavior: .deliverImmediately)
-        
     }
     
+    // MARK: - StopwatchManagerDelegate
     
-    
-    @objc private func handleStart() {
-        startTimer()
-    }
-
-    @objc private func handleStop() {
-        stopTimer()
-    }
-
-    @objc private func handleReset() {
-        resetTimer()
-    }
-    
-    @objc private func handleQuit() {
-        resetTimer()
-        NSApp.terminate(nil)
-    }
-
+    /// Implementation of the StopwatchManagerDelegate protocol.
+    /// Updates the published currentTime property when notified by the manager.
     func didUpdateTime(_ timeString: String) {
-        currentTime = timeString
+        // Ensure updates happen on the main thread
+        DispatchQueue.main.async {
+            self.currentTime = timeString
+        }
     }
     
-    func startTimer() { stopwatchManager.startTimer() }
-    func stopTimer() { stopwatchManager.stopTimer() }
-    func resetTimer() { stopwatchManager.resetTimer() }
-    func quitTimer() { stopwatchManager.quitTimer()
-        NSApp.terminate(nil)}
-
+    // MARK: - Timer Control Methods
+    
+    /// Starts the stopwatch timer.
+    func startTimer() {
+        stopwatchManager.startTimer()
+    }
+    
+    /// Stops (pauses) the stopwatch timer.
+    func stopTimer() {
+        stopwatchManager.stopTimer()
+    }
+    
+    /// Resets the stopwatch timer to 00:00:00.
+    func resetTimer() {
+        stopwatchManager.resetTimer()
+    }
 }

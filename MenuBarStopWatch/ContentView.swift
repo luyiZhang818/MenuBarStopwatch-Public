@@ -1,18 +1,23 @@
 import SwiftUI
 
+/// The main dropdown menu content view that appears when clicking the menu bar item.
+/// Displays control buttons for the stopwatch.
 struct ContentView: View {
-    @EnvironmentObject private var appDelegate: AppDelegate
-    
+    /// Environment object provided by the parent view that controls the stopwatch.
+    @EnvironmentObject private var stopwatchController: StopwatchController
+
     var body: some View {
         VStack(spacing: 0) {
-            MenuButton(action: appDelegate.startTimer, title: "Start", shortcut: "s")
-            MenuButton(action: appDelegate.stopTimer, title: "Stop", shortcut: "p")
-            MenuButton(action: appDelegate.resetTimer, title: "Reset", shortcut: "r")
-            
+            // Stopwatch control buttons
+            MenuButton(action: stopwatchController.startTimer, title: "Start", shortcut: "s")
+            MenuButton(action: stopwatchController.stopTimer, title: "Stop", shortcut: "p")
+            MenuButton(action: stopwatchController.resetTimer, title: "Reset", shortcut: "r")
+
             Divider()
                 .padding(.vertical, 4)
             
-            MenuButton(action: appDelegate.quitTimer, title: "Quit", shortcut: "q")
+            // Quit application button
+            MenuButton(action: { NSApp.terminate(nil) }, title: "Quit", shortcut: "q")
                 .foregroundColor(.red)
         }
         .padding(.vertical, 8)
@@ -20,14 +25,20 @@ struct ContentView: View {
     }
 }
 
+/// A custom button styled for the menu dropdown with hover effects and keyboard shortcut display.
 struct MenuButton: View {
+    /// The action to perform when the button is clicked.
     let action: () -> Void
+    /// The button text label.
     let title: String
+    /// The keyboard shortcut character to display (without modifiers).
     let shortcut: String
+    /// Tracks whether the mouse is hovering over this button.
     @State private var isHovered = false
     
     var body: some View {
         Button {
+            // Execute the provided action and dismiss the menu
             action()
             NSApp.keyWindow?.orderOut(nil)
         } label: {

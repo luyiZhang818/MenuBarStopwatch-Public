@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18334DEC2DA06C8300FA517A /* StopwatchShortcut.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		18334DFB2DA0848800FA517A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 18334DFA2DA0848200FA517A /* .gitignore */; };
 		18334E1F2DA08AFD00FA517A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18334E1D2DA08AF800FA517A /* README.md */; };
 		1880A11B2DA02D1F00282601 /* StopWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; };
 		1880A1262DA02D1F00282601 /* StopWatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880A1112DA02D1E00282601 /* StopWatchKit.framework */; };
@@ -16,13 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18334DEA2DA06C8300FA517A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18334DE12DA06C8300FA517A;
-			remoteInfo = StopwatchShortcut;
-		};
 		1880A0D52DA0284C00282601 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1880A0BB2DA0284B00282601 /* Project object */;
@@ -67,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				18334DEC2DA06C8300FA517A /* StopwatchShortcut.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = StopwatchShortcut.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		18334DFA2DA0848200FA517A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		18334E1D2DA08AF800FA517A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1880A0C32DA0284B00282601 /* MenuBarStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarStopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,13 +86,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		18334DED2DA06C8300FA517A /* Exceptions for "StopwatchShortcut" folder in "StopwatchShortcut" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 18334DE12DA06C8300FA517A /* StopwatchShortcut */;
-		};
 		18334E252DA08B6300FA517A /* Exceptions for "Images" folder in "MenuBarStopWatch" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -132,14 +114,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		18334DE32DA06C8300FA517A /* StopwatchShortcut */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				18334DED2DA06C8300FA517A /* Exceptions for "StopwatchShortcut" folder in "StopwatchShortcut" target */,
-			);
-			path = StopwatchShortcut;
-			sourceTree = "<group>";
-		};
 		18334E242DA08B5E00FA517A /* Images */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -182,13 +156,6 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18334DDF2DA06C8300FA517A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1880A0C02DA0284B00282601 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,7 +204,6 @@
 				1880A0E12DA0284C00282601 /* MenuBarStopWatchUITests */,
 				1880A1122DA02D1E00282601 /* StopWatchKit */,
 				1880A1202DA02D1F00282601 /* StopWatchKitTests */,
-				18334DE32DA06C8300FA517A /* StopwatchShortcut */,
 				18334DFA2DA0848200FA517A /* .gitignore */,
 				18334E1D2DA08AF800FA517A /* README.md */,
 				1880A1312DA0300600282601 /* Frameworks */,
@@ -254,7 +220,6 @@
 				1880A0DE2DA0284C00282601 /* MenuBarStopWatchUITests.xctest */,
 				1880A1112DA02D1E00282601 /* StopWatchKit.framework */,
 				1880A11A2DA02D1F00282601 /* StopWatchKitTests.xctest */,
-				18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,28 +244,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		18334DE12DA06C8300FA517A /* StopwatchShortcut */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18334DEE2DA06C8300FA517A /* Build configuration list for PBXNativeTarget "StopwatchShortcut" */;
-			buildPhases = (
-				18334DDE2DA06C8300FA517A /* Sources */,
-				18334DDF2DA06C8300FA517A /* Frameworks */,
-				18334DE02DA06C8300FA517A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				18334DE32DA06C8300FA517A /* StopwatchShortcut */,
-			);
-			name = StopwatchShortcut;
-			packageProductDependencies = (
-			);
-			productName = StopwatchShortcut;
-			productReference = 18334DE22DA06C8300FA517A /* StopwatchShortcut.appex */;
-			productType = "com.apple.product-type.extensionkit-extension";
-		};
 		1880A0C22DA0284B00282601 /* MenuBarStopWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1880A0E82DA0284C00282601 /* Build configuration list for PBXNativeTarget "MenuBarStopWatch" */;
@@ -315,7 +258,6 @@
 			);
 			dependencies = (
 				1880A1252DA02D1F00282601 /* PBXTargetDependency */,
-				18334DEB2DA06C8300FA517A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				18334E242DA08B5E00FA517A /* Images */,
@@ -431,9 +373,6 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					18334DE12DA06C8300FA517A = {
-						CreatedOnToolsVersion = 16.3;
-					};
 					1880A0C22DA0284B00282601 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -473,20 +412,11 @@
 				1880A0DD2DA0284C00282601 /* MenuBarStopWatchUITests */,
 				1880A1102DA02D1E00282601 /* StopWatchKit */,
 				1880A1192DA02D1F00282601 /* StopWatchKitTests */,
-				18334DE12DA06C8300FA517A /* StopwatchShortcut */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18334DE02DA06C8300FA517A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18334DFB2DA0848800FA517A /* .gitignore in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1880A0C12DA0284B00282601 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,13 +456,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18334DDE2DA06C8300FA517A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1880A0BF2DA0284B00282601 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,11 +494,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18334DEB2DA06C8300FA517A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18334DE12DA06C8300FA517A /* StopwatchShortcut */;
-			targetProxy = 18334DEA2DA06C8300FA517A /* PBXContainerItemProxy */;
-		};
 		1880A0D62DA0284C00282601 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1880A0C22DA0284B00282601 /* MenuBarStopWatch */;
@@ -604,68 +522,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		18334DEF2DA06C8300FA517A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = StopwatchShortcut/StopwatchShortcut.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = P3F6562DPX;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StopwatchShortcut/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = StopwatchShortcut;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch.StopwatchShortcutExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		18334DF02DA06C8300FA517A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = StopwatchShortcut/StopwatchShortcut.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = P3F6562DPX;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StopwatchShortcut/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = StopwatchShortcut;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch.StopwatchShortcutExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		1880A0E62DA0284C00282601 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -792,7 +648,7 @@
 				CODE_SIGN_ENTITLEMENTS = MenuBarStopWatch/MenuBarStopWatch.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MenuBarStopWatch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -812,7 +668,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -834,7 +690,7 @@
 				CODE_SIGN_ENTITLEMENTS = MenuBarStopWatch/MenuBarStopWatch.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MenuBarStopWatch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -854,7 +710,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -878,15 +734,15 @@
 				DEVELOPMENT_TEAM = P3F6562DPX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBarStopWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenuBarStopWatch";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -902,15 +758,15 @@
 				DEVELOPMENT_TEAM = P3F6562DPX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MenuBarStopWatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MenuBarStopWatch";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -924,15 +780,15 @@
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_TARGET_NAME = MenuBarStopWatch;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -946,15 +802,15 @@
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_TARGET_NAME = MenuBarStopWatch;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -982,7 +838,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -1020,7 +876,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -1043,7 +899,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1061,7 +917,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.luyi.MenuBarStopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1075,15 +931,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18334DEE2DA06C8300FA517A /* Build configuration list for PBXNativeTarget "StopwatchShortcut" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18334DEF2DA06C8300FA517A /* Debug */,
-				18334DF02DA06C8300FA517A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1880A0BE2DA0284B00282601 /* Build configuration list for PBXProject "MenuBarStopWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
