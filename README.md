@@ -2,7 +2,7 @@
 
 A minimalist macOS menu bar stopwatch application with Siri Shortcuts integration.
 
-[![Mac App Store](Images/AppStore_Badge.png)](https://apps.apple.com/app/6744621102)
+[![Mac App Store](Images/AppStore_Badge.jpg)](https://apps.apple.com/app/6744621102)
 
 Now available on the Mac App Store!
 
